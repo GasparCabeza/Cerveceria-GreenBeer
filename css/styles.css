@@ -1,0 +1,407 @@
+.body{
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/*navegador de mi proyecto*/
+#imagen-logo{
+    width: 150px;
+}
+
+.nav-index{
+    background: linear-gradient(0deg, rgba(34,195,88,1) 100%, rgba(147,253,45,1) 100%, rgba(45,193,67,1) 100%);
+    display: flex;
+    flex-direction: row;
+    justify-content:baseline ;
+    
+    
+}
+.nav-index ul{
+    list-style: none; 
+    display: flex;
+    flex-direction: row;
+    position: relative; 
+    left: 25%;
+      
+}
+.nav-index ul li{
+margin: 3px;
+font-size: 20px;
+
+}
+.nav-index a{
+    color: black;
+    text-decoration: none;
+}
+#titulo{
+    position: relative;
+    left: 25%;
+    font-size: 50px;
+    text-decoration: underline;
+    -webkit-text-stroke: 2px black;
+    color: white;
+}
+button {
+    border:solid black;
+     position: relative;
+    padding: 10px 15px;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+button:hover {
+    transform:scale(1.1) ;
+}
+/*mi index*/
+.main-index{
+display: flex;
+flex-direction: column;
+
+}
+.main-index img{
+    margin: 10px;
+    border: 10px solid black;
+}
+.top-imagenes{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.top-imagenes img {
+    width: 700px;
+}
+.bot-imagenes{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.bot-imagenes img{
+    width: 700px;
+}
+.imagen-1{
+    position: absolute;
+    top: 55%;
+    left: 41%;
+    color:green;
+    -webkit-text-stroke: 2px black;
+    font-size: 40px;
+}
+.imagen-1:hover{
+    transform: scale(1.5);
+}
+.imagen-2{
+    position: absolute;
+    top: 130%;
+    left: 40%;
+    -webkit-text-stroke: 2px black;
+    font-size: 40px;
+}
+.imagen-2:hover{
+transform: scale(1.5);
+}
+.imagen-3{
+    position: absolute;
+    top: 195%;
+    left: 45%;
+    color:green;
+    -webkit-text-stroke: 2px black;
+    font-size: 40px;
+}
+.imagen-3:hover{
+    transform: scale(1.5);
+}
+.imagen-4{
+    position: absolute;
+    top: 270%;
+    left: 45%;
+    color:green;
+    -webkit-text-stroke: 2px black;
+    font-size: 40px;
+}
+.imagen-4:hover{
+    transform: scale(1.5);
+}
+/*footer proyecto*/
+.footer-index{
+    display: flex;
+    flex-direction: row;
+      position: relative;
+    justify-content: center;
+}
+.footer-index img{
+    width: 100px;
+}
+/*page-somos*/
+.top-somos{
+    display: flex;
+    flex-direction: row;
+    top: 25px;
+     position: relative;
+}
+.top-somos img{
+    width: 50%;
+   position: relative;
+    border: 5px solid black;
+    right: 7px;
+}
+.top-somos p {
+    font-size: 25px;
+    text-align: justify;
+    margin: 10px;
+}
+.bot-somos{
+display: flex;
+flex-direction: row-reverse;
+
+}
+.bot-somos img{
+    width: 50%;
+    position: relative;
+    top: 45px;
+    left: 12px;
+    border: 5px solid black; 
+}
+.bot-somos p{
+    position: relative;
+    top: 45px;
+    font-size: 25px;
+    text-align: justify;
+    margin: 10px;
+}
+/*page-catalogo-desktop*/
+.main-catalogo{
+    display: grid;
+    grid-template-areas:
+    "main-beer-1 main-beer-2" 
+    "main-beer-3 main-beer-4";
+    position: relative;
+    margin: 30px;
+    
+}
+.main-catalogo img{
+    width: 450px;
+    height: 250px;
+    border: 5px solid black;
+}
+.main-catalogo img:hover{
+    transform: scale(1.2);
+
+}
+.list-catalogo{
+    list-style: none;
+}
+.list-catalogo li{
+    list-style: none;
+}
+.main-beer-1{
+    grid-area: main-beer-1;
+}
+.main-beer-2{
+    grid-area: main-beer-2;
+}
+.main-beer-3{
+    grid-area: main-beer-3;
+}
+.main-beer-4{
+    grid-area: main-beer-4;
+}
+/*page-concato-desktop*/
+.main-contacto form {
+    width: 450px;
+    margin: auto;
+    background :rgba(0, 0, 0, 0.4) ;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    margin-top: 20px;
+    border-radius: 7px;
+    
+}
+.main-contacto h2 {
+    background-color: black;
+    color: aliceblue;
+    text-align: center;
+    margin: 0%;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+.main-contacto input, textarea{
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 7px;
+    box-sizing: border-box;
+    font-size: 17px;
+    border: none;
+}
+.main-contacto textarea{
+    min-height: 100px;
+    max-height: 200px ;
+    max-width: 100%;
+ }
+ #boton{
+    background-color: black;
+    color: white;
+    padding: 20px;
+    }
+ #boton:hover {
+    cursor: pointer;
+ }
+ /*page-barril-desktop*/
+ .main-barril p { 
+   position: relative;
+   top: 35px;
+   text-align: justify;
+   font-size: 25px;
+   margin: 10px;
+ }
+ .main-barril img {
+    width: 50%;
+    position: relative;
+    top: 30px;
+    left:25%;
+    border: 5px solid black;
+    }
+@media screen and (max-width:1024px){
+    .nav-index{
+        flex-direction: column;
+        position: relative;
+     }
+     #titulo{
+        left: 40%;
+        text-decoration: underline;
+        -webkit-text-stroke: 2px black;
+        color: white;
+    }
+   
+}
+
+
+@media screen and (max-width:500px){
+    /*page contacto mobile*/
+    .main-contacto-form{ 
+        width: 100%;
+    }
+    /*page index mobile*/
+    .nav-index{
+        flex-direction: column;
+        position: relative;
+        align-items: center;
+        border: 3px solid black;
+     }
+    .nav-index ul{
+        left: 0%;
+          
+    }
+    .nav-index ul li{
+    margin: 3px;
+    font-size: 20px;
+    
+    
+    }
+    .nav-index a{
+        color: black;
+        text-decoration: none;
+    }
+    #titulo{
+       font-size: 35px;
+        color: black;
+        justify-content: center;
+        align-items: center;
+        left: 0px;
+    }
+    button {
+        border: 1px solid black;
+        padding: 1px 3px;
+    }
+    #imagen-logo{
+        width: 100px;
+        justify-content: center;
+        align-items: center;
+    }
+    /*imagenes de index*/
+    .top-imagenes img {
+        width: 94%;
+        
+    }
+    .bot-imagenes img{
+        width: 94%;
+    }
+    .imagen-1{
+        top: 70%;
+        left: 28%;
+
+    }
+    .imagen-2{
+        left: 25%;
+        color:green;
+    }
+    .imagen-3{
+        top: 187%;
+        left: 40%;
+
+    }
+    .imagen-4{
+        position: absolute;
+        top: 247%;
+        left: 37%;
+
+    }
+    .top-somos{
+        flex-direction: column;
+
+    }
+    .bot-somos{
+        display: flex;
+        flex-direction: column;
+    }
+    .top-somos img{
+        width: 100%;
+        right: 0;
+        margin: 0;
+    }
+        
+
+    .bot-somos img{
+             width: 100%;
+            margin: 0;
+        }
+           
+
+    /*page catalogo mobile*/
+    .main-catalogo{
+        display: grid;
+        grid-template-areas:
+        "main-beer-1" 
+        "main-beer-2" 
+        "main-beer-3" 
+        "main-beer-4";
+         }
+         .main-catalogo img{
+            width: 100%;
+            height: 250px;
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    }
